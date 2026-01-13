@@ -1,0 +1,8 @@
+.cartPageContainer{
+    display: flex;
+    gap: 8px;
+}
+.itemCount{
+    color: red;
+    font-weight: bold;
+}

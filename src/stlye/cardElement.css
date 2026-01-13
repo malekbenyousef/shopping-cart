@@ -1,0 +1,73 @@
+.CardElement {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+}
+
+.CardElement:hover {
+    transform: translateY(-5px);
+}
+
+.imageHolder {
+    width: 100%;
+    background-color: #454545;
+    border-radius: calc(var(--border-radius) - 4px);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.productImage {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; 
+    display: block;
+    transition: var(--transition);
+}
+
+.CardElement:hover .productImage {
+    transform: scale(1.05);
+}
+
+.actionSection {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.actionSection button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.actionSection button:hover {
+    filter: brightness(1.1);
+}
+input{
+  width: 50px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 8px 0;
+  appearance: textfield; 
+}
+.priceTag{
+    background-color: black;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+}
